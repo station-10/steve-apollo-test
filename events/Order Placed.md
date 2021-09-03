@@ -15,7 +15,8 @@ appEventData.push({
                 },
                 "productInfo": {
                     "brand": "<brand>",
-                    "productID": "<productID>"
+                    "productID": "<productID>",
+                    "sku": "<sku>"
                 },
                 "quantity": "<quantity>",
                 "shippingVoucherCode": "<shippingVoucherCode>",
@@ -52,3 +53,4 @@ appEventData.push({
 |sellingPrice|string|String representation of the price paid after coupons or discounts. Positive. Up to two decimal places for cents. No currency symbol.|200, 29.99, 50, 0|^[0-9]*(\.[0-9]{1,2})?$||||||
 |shippingVoucherCode|string|Discount code applied against shipping costs for a shipping Group|FREESHIPAPRIL, FREESHIP100|||||||
 |shippingVoucherDiscount|string|String representation of an discount applied against shipping costs for a shipping group. Positive. Up to two decimal places for cents. No currency symbol.|5, 20, 10.22, 19.2|^[0-9]*(\.[0-9]{1,2})?$||||||
+|sku|string|Stock Keeping Unit \(SKU\) Unique Identifier of specific item \(typically\) held in inventory.  Must match the format of back-end systems if used as a key for import of product meta data. Most often, one level below productID for products with SKU variants. |34567890, 4567890, 00155-large-cornflower|||||||
