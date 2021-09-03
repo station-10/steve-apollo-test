@@ -11,12 +11,12 @@ appEventData.push({
         "campaignList": [
             {
                 "internalCampaignCreative": "<internalCampaignCreative>",
+                "internalCampaignID": "<internalCampaignID>",
                 "internalCampaignName": "<internalCampaignName>",
                 "internalCampaignObjective": "<internalCampaignObjective>",
                 "internalCampaignPosition": "<internalCampaignPosition>"
             }
-        ],
-        "internalCampaignID": "<internalCampaignID>"
+        ]
     }
 });
 ```
