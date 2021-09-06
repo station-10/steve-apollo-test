@@ -37,6 +37,7 @@ appEventData.push({
                 },
                 "quantity": "<quantity>",
                 "shippingAddress": {
+                    "postalCode": "<postalCode>",
                     "stateProvince": "<stateProvince>"
                 },
                 "shippingCost": "<shippingCost>",
@@ -64,8 +65,7 @@ appEventData.push({
         ],
         "profile": {
             "address": {
-                "country": "<country>",
-                "postalCode": "<postalCode>"
+                "country": "<country>"
             }
         },
         "purchaseID": "<purchaseID>",
@@ -101,7 +101,7 @@ appEventData.push({
 |paymentID|string|Unique identifier of a payment.  Typically an integration key from a back-end system.|ZPH-87698-098|||||||
 |paymentMethod|string|Describes the method of payment for a transaction. |Credit Card, PayPal, Mastercard, Visa, Amex, Discover|||||||
 |paymentSequence|integer|Integer indicator of the sequence in which payments were applied within a transaction.  Starting with 1.|1, 2, 3, 4, 5||||1|||
-|postalCode|string|The mailing zip or postal code associated with the billing address. |53533, 30381, M1R 0E9, M3C 0C1|||||||
+|postalCode|string|The mailing zip or postal code associated with the address of the shipment. |53533, 30381, M1R 0E9, M3C 0C1|||||||
 |priceTier|string|Describes the general pricing tier of a product. \(Good, Better, Best\)|Good, Better, Best, Bronze, Silver, Gold|||||||
 |priceType|string|Describes the type of price offered using commonly used terms. |1st mark, 2nd mark, 3rd mark, clearance, sale, doorbuster|||||||
 |productID|string|Unique Identifier of a product or offering.  Must match the format of back-end systems if used as a key for import of product meta data. Most often, one level above SKU for products with SKU variants. |155, 65588, 987764448|||||||
