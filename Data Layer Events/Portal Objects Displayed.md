@@ -10,7 +10,7 @@ appEventData.push({
     "portalDisplayed": {
         "portalObject": [
             {
-                "isDisplayed": "<isDisplayed>",
+                "isDisplayed": <isDisplayed>,
                 "portalObjectId": "<portalObjectId>"
             }
         ]
@@ -24,6 +24,7 @@ appEventData.push({
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |isDisplayed|boolean|Helper node used by AA Product String Builder to set product scoped events|true|||||||
 |portalObjectId|string|Unique identifier of a portal object|My Accounts, Transactions, Messages, My Reports|||||||
+
 
 
 
