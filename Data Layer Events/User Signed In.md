@@ -13,9 +13,9 @@ appEventData.push({
             "memberId": "<memberId>",
             "memberStatus": "<memberStatus>"
         },
-        "loyaltyPoints": "<loyaltyPoints>",
+        "loyaltyPoints": <loyaltyPoints>,
         "organizationID": "<organizationID>",
-        "persistedLogin": "<persistedLogin>",
+        "persistedLogin": <persistedLogin>,
         "system": "<system>",
         "userType": "<userType>"
     }
@@ -34,6 +34,7 @@ appEventData.push({
 |persistedLogin|integer|Count of times users selected the option to persist their login \(i.e.,"keep me logged in"\) when signing in.||||||||
 |system|string|Describes the system that the user is logged into.  \(rarely used\). |admin, shop, member|||||||
 |userType|string|Describes the type of the user.  Often used to differentiate customers from employees or associates. |employee, guest, agent, customer|||||||
+
 
 
 

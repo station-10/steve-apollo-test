@@ -12,7 +12,7 @@ appEventData.push({
         "formField": [
             {
                 "fieldID": "<fieldID>",
-                "fieldPosition": "<fieldPosition>",
+                "fieldPosition": <fieldPosition>,
                 "formFieldError": "<formFieldError>",
                 "formSection": "<formSection>"
             }
@@ -36,6 +36,7 @@ appEventData.push({
 |formName|string|Plain text form name. Generally used if formID is not obtainable. |Payment Info, Mailing Address, Payment Address, Contact Us|||||||
 |formSection|string|Describes the section of a form to which a form field belongs. Useful for reporting on complex forms.|address1, address2, cc info, terms acceptance|||||||
 |formType|string|Form type used for grouping of similar forms in reports.  |Address, Contact, Comment, Review, Payment|||||||
+
 
 
 

@@ -20,7 +20,7 @@ appEventData.push({
                 "brand": "<brand>",
                 "businessUnit": "<businessUnit>",
                 "color": "<color>",
-                "isOutOfStock": "<isOutOfStock>",
+                "isOutOfStock": <isOutOfStock>,
                 "name": "<name>",
                 "productID": "<productID>",
                 "productLine": "<productLine>",
@@ -45,6 +45,7 @@ appEventData.push({
 |productID|string|Unique Identifier of a product or offering.  Must match the format of back-end systems if used as a key for import of product meta data. Most often, one level above SKU for products with SKU variants. |155, 65588, 987764448|||||||
 |productLine|string|Describes the product Line of a product. |Laminate Wood, Vinyl, Hardwood, Stone, Ceramic|||||||
 |sku|string|Stock Keeping Unit \(SKU\) Unique Identifier of specific item \(typically\) held in inventory.  Must match the format of back-end systems if used as a key for import of product meta data. Most often, one level below productID for products with SKU variants. |34567890, 4567890, 00155-large-cornflower|||||||
+
 
 
 
