@@ -8,11 +8,11 @@ window.appEventData = window.appEventData || [];
 appEventData.push({
   "event": "Report Listing Displayed",
     "listingDisplayed": {
-        "displayCount": "<displayCount>",
+        "displayCount": <displayCount>,
         "listing": [
             {
-                "isDisplayed": "<isDisplayed>",
-                "itemPosition": "<itemPosition>",
+                "isDisplayed": <isDisplayed>,
+                "itemPosition": <itemPosition>,
                 "report": {
                     "reportID": "<reportID>",
                     "reportType": "<reportType>"
@@ -20,7 +20,7 @@ appEventData.push({
             }
         ],
         "listingDriver": "<listingDriver>",
-        "resultsCount": "<resultsCount>"
+        "resultsCount": <resultsCount>
     },
     "listingRefined": {
         "listingType": "<listingType>"
@@ -40,6 +40,7 @@ appEventData.push({
 |reportID|string|Unique ID for a Report||||||||
 |reportType|string|The type of the report|Transactions, Financial|||||||
 |resultsCount|integer|The total number of items returned that matched the search criteria. \(Integer\)|1, 21, 111, 166||||0|||
+
 
 
 
