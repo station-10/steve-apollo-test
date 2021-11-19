@@ -25,6 +25,6 @@ appEventData.push({
 |linkPage|string|Indicates the page a link was clicked from|Home Page, Order Confirmation|||||||
 |linkRegion|string|Indicates the region on page for a clicked link within the hierarchy \[Site &gt; Page &gt; Region &gt; Container &gt; linkID\]|Top Nav, Footer Nav, Hero, Recommended, Also Shopped, Also Bought|||||||
 
+## Attached Notes
 
-
-
+<p>This code should execute when a CTA is clicked.</p>
