@@ -29,15 +29,15 @@ appEventData.push({
                     "brand": "<brand>",
                     "businessUnit": "<businessUnit>",
                     "color": "<color>",
-                    "isGiftWrapped": "<isGiftWrapped>",
+                    "isGiftWrapped": <isGiftWrapped>,
                     "name": "<name>",
                     "productID": "<productID>",
                     "sku": "<sku>",
                     "thirdyPartyVendorID": "<thirdyPartyVendorID>"
                 },
-                "quantity": "<quantity>",
+                "quantity": <quantity>,
                 "shippingAddress": {
-                    "postalCode": "<postalCode>",
+                    "country": "<country>",
                     "stateProvince": "<stateProvince>"
                 },
                 "shippingCost": "<shippingCost>",
@@ -55,23 +55,23 @@ appEventData.push({
         ],
         "payment": [
             {
-                "loyaltyPointsAmount": "<loyaltyPointsAmount>",
+                "loyaltyPointsAmount": <loyaltyPointsAmount>,
                 "paymentAmount": "<paymentAmount>",
                 "paymentGateway": "<paymentGateway>",
                 "paymentID": "<paymentID>",
                 "paymentMethod": "<paymentMethod>",
-                "paymentSequence": "<paymentSequence>"
+                "paymentSequence": <paymentSequence>
             }
         ],
         "profile": {
             "address": {
-                "country": "<country>"
+                "postalCode": "<postalCode>"
             }
         },
         "purchaseID": "<purchaseID>",
         "total": {
             "currency": "<currency>",
-            "numPayments": "<numPayments>"
+            "numPayments": <numPayments>
         }
     }
 });
@@ -86,7 +86,7 @@ appEventData.push({
 |businessUnit|string|The business unit associated with each product.|Apparel, Shoes, Home|||||||
 |cartID|string|Back-end identifier for a shopping cart|12345, 435678, 34567, XCV456, XCV876|||||||
 |color|string|Describes the colorway of a product or product variant|Antique Oak, Granite, Black Marble, Knotty Pine|||||||
-|country|string|Indicates the country of the billing address. ISO 3166 \(alpha-2\) Uppercase.|US, CA, FR, UK|^[A-Z]{2}$||||||
+|country|string|Indicates the country of the address of the shipment. ISO 3166 \(alpha-2\) Uppercase.|US, CA, FR, UK|^[A-Z]{2}$||||||
 |currency|string|Currency of the transaction. ISO 4217 \(3 character alpha\), uppercase |USD, CAD, GBP, CHF|^[A-Z]{3}$|3|3||||
 |isGiftWrapped|boolean|At order confirmaton, set a to true for every product that is gift wrapped.||||||||
 |loyaltyPointsAmount|integer|Number of loyalty points |100, 101, 1000||||0|||
@@ -101,7 +101,7 @@ appEventData.push({
 |paymentID|string|Unique identifier of a payment.  Typically an integration key from a back-end system.|ZPH-87698-098|||||||
 |paymentMethod|string|Describes the method of payment for a transaction. |Credit Card, PayPal, Mastercard, Visa, Amex, Discover|||||||
 |paymentSequence|integer|Integer indicator of the sequence in which payments were applied within a transaction.  Starting with 1.|1, 2, 3, 4, 5||||1|||
-|postalCode|string|The mailing zip or postal code associated with the address of the shipment. |53533, 30381, M1R 0E9, M3C 0C1|||||||
+|postalCode|string|The mailing zip or postal code associated with the billing address. |53533, 30381, M1R 0E9, M3C 0C1|||||||
 |priceTier|string|Describes the general pricing tier of a product. \(Good, Better, Best\)|Good, Better, Best, Bronze, Silver, Gold|||||||
 |priceType|string|Describes the type of price offered using commonly used terms. |1st mark, 2nd mark, 3rd mark, clearance, sale, doorbuster|||||||
 |productID|string|Unique Identifier of a product or offering.  Must match the format of back-end systems if used as a key for import of product meta data. Most often, one level above SKU for products with SKU variants. |155, 65588, 987764448|||||||
@@ -120,6 +120,7 @@ appEventData.push({
 |storeID|string|A unique identifier for the store that the order was placed with.|stew's boot shop, kat's cat toys, 12345|||||||
 |tax|string|String representation of the tax collected at a shipment level for a transaction. Positive. Up to two decimal places for cents. No currency symbol.|5.05, 20, 10.22, 9.2|^[0-9]*(\.[0-9]{1,2})?$||||||
 |thirdyPartyVendorID|string|Captures the vendor id of the third party vendor associated with product conversion.||||||||
+
 
 
 
